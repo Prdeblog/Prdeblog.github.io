@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>基于光流法视频测流思路</title>
+    <url>/posts/46795.html</url>
+    <content><![CDATA[<p>光流法是一种常用的方法来测量河流的流速。它基于计算机视觉中的光流算法，通过分析连续帧之间的像素位移来估计物体的运动。在河流中，利用光流法来追踪水流中的特征点（如浮标或漂浮物）并计算流速。</p>
+<p>基于光流法测量河流流速的一般步骤：</p>
+<ol>
+<li><p>获取视频数据：使用一个或多个摄像机拍摄河流的视频。确保摄像机稳定且视频质量良好。</p>
+</li>
+<li><p>特征点提取：从视频帧中提取特征点。可以使用一些特征点检测算法，如Harris角点检测、SIFT（尺度不变特征变换）或SURF（加速稳健特征）等。特征点应该具有在连续帧之间稳定的纹理特征。</p>
+</li>
+<li><p>光流计算：使用光流算法（如Lucas-Kanade、Horn-Schunck或Farneback算法）计算特征点在连续帧之间的位移向量。这些算法基于像素间的亮度变化来估计光流向量。</p>
+</li>
+<li><p>筛选和跟踪：根据一些筛选条件（如像素位移的大小、相邻特征点的一致性等），筛选出可靠的光流向量，并跟踪这些特征点在连续帧中的位置。</p>
+</li>
+<li><p>流速计算：根据跟踪的特征点在时间间隔内的位移，结合摄像机的参数和距离标定，可以计算出水流的流速。通过将位移向量转换为实际的距离，并除以时间间隔，可以得到平均流速或瞬时流速。</p>
+</li>
+</ol>
+<p>结合其他方法和技术来改进光流法的结果，如结构光投影、多摄像机系统、图像配准等。</p>
+]]></content>
+      <categories>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>视频测流</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/posts/16107.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -36,32 +62,6 @@
       </categories>
       <tags>
         <tag>-templete -Django</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>基于光流法视频测流思路</title>
-    <url>/posts/46795.html</url>
-    <content><![CDATA[<p>光流法是一种常用的方法来测量河流的流速。它基于计算机视觉中的光流算法，通过分析连续帧之间的像素位移来估计物体的运动。在河流中，利用光流法来追踪水流中的特征点（如浮标或漂浮物）并计算流速。</p>
-<p>基于光流法测量河流流速的一般步骤：</p>
-<ol>
-<li><p>获取视频数据：使用一个或多个摄像机拍摄河流的视频。确保摄像机稳定且视频质量良好。</p>
-</li>
-<li><p>特征点提取：从视频帧中提取特征点。可以使用一些特征点检测算法，如Harris角点检测、SIFT（尺度不变特征变换）或SURF（加速稳健特征）等。特征点应该具有在连续帧之间稳定的纹理特征。</p>
-</li>
-<li><p>光流计算：使用光流算法（如Lucas-Kanade、Horn-Schunck或Farneback算法）计算特征点在连续帧之间的位移向量。这些算法基于像素间的亮度变化来估计光流向量。</p>
-</li>
-<li><p>筛选和跟踪：根据一些筛选条件（如像素位移的大小、相邻特征点的一致性等），筛选出可靠的光流向量，并跟踪这些特征点在连续帧中的位置。</p>
-</li>
-<li><p>流速计算：根据跟踪的特征点在时间间隔内的位移，结合摄像机的参数和距离标定，可以计算出水流的流速。通过将位移向量转换为实际的距离，并除以时间间隔，可以得到平均流速或瞬时流速。</p>
-</li>
-</ol>
-<p>结合其他方法和技术来改进光流法的结果，如结构光投影、多摄像机系统、图像配准等。</p>
-]]></content>
-      <categories>
-        <category>学术研究</category>
-      </categories>
-      <tags>
-        <tag>视频测流</tag>
       </tags>
   </entry>
 </search>
