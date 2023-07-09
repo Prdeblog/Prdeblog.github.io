@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/posts/16107.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>django开发模板</title>
     <url>/posts/46794.html</url>
     <content><![CDATA[<h3 id="django开发"><a href="#django开发" class="headerlink" title="django开发"></a>django开发</h3><h4 id="url"><a href="#url" class="headerlink" title="url"></a>url</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.views.decorators.csrf <span class="keyword">import</span> csrf_exempt</span><br><span class="line"></span><br><span class="line">path(<span class="string">&#x27;api/xxx/xxx&#x27;</span>,csrf_exempt(xxxView.as_view()))</span><br></pre></td></tr></table></figure>
@@ -21,21 +39,30 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/16107.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>基于光流法视频测流思路</title>
+    <url>/posts/46795.html</url>
+    <content><![CDATA[<p>光流法是一种常用的方法来测量河流的流速。它基于计算机视觉中的光流算法，通过分析连续帧之间的像素位移来估计物体的运动。在河流中，你可以利用光流法来追踪水流中的特征点（如浮标或漂浮物）并计算流速。</p>
+<p>以下是一个基于光流法测量河流流速的一般步骤：</p>
+<ol>
+<li><p>获取视频数据：使用一个或多个摄像机拍摄河流的视频。确保摄像机稳定且视频质量良好。</p>
+</li>
+<li><p>特征点提取：从视频帧中提取特征点。可以使用一些特征点检测算法，如Harris角点检测、SIFT（尺度不变特征变换）或SURF（加速稳健特征）等。特征点应该具有在连续帧之间稳定的纹理特征。</p>
+</li>
+<li><p>光流计算：使用光流算法（如Lucas-Kanade、Horn-Schunck或Farneback算法）计算特征点在连续帧之间的位移向量。这些算法基于像素间的亮度变化来估计光流向量。</p>
+</li>
+<li><p>筛选和跟踪：根据一些筛选条件（如像素位移的大小、相邻特征点的一致性等），筛选出可靠的光流向量，并跟踪这些特征点在连续帧中的位置。</p>
+</li>
+<li><p>流速计算：根据跟踪的特征点在时间间隔内的位移，结合摄像机的参数和距离标定，可以计算出水流的流速。通过将位移向量转换为实际的距离，并除以时间间隔，可以得到平均流速或瞬时流速。</p>
+</li>
+</ol>
+<p>需要注意的是，光流法的准确性受到一些因素的影响，如光照变化、水流纹理变化、特征点的稳定性等。因此，在使用光流法进行流速测量时，需要进行适当的校准和误差估计。</p>
+<p>此外，还可以结合其他方法和技术来改进光流法的结果，如结构光投影、多摄像机系统、图像配准等。这些方法可以提供更准确和可靠的流速测量结果。</p>
 ]]></content>
+      <categories>
+        <category>学术研究</category>
+      </categories>
+      <tags>
+        <tag>视频测流</tag>
+      </tags>
   </entry>
 </search>
